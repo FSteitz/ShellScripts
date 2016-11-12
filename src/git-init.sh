@@ -6,6 +6,15 @@
 # Initializes a Git repository with a couple of basic empty files.
 ###
 
+# Arguments
+REPOSITORY=$1
+
+if [ -z "$REPOSITORY" ]
+  then
+    echo "A valid Git repository must be specified"
+    exit 1
+fi
+
 # Init repository
 git init
 git remote add origin $REPOSITORY

@@ -1,5 +1,11 @@
 #!/bin/bash
 
+###
+# Copyright (c) 2016 Florian Steitz
+#
+# Initializes a Git repository with a couple of basic empty files.
+###
+
 # Init repository
 git init
 git remote add origin $REPOSITORY
